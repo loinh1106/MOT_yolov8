@@ -61,7 +61,7 @@ def run(
         save_trajectories=False,  # save trajectories for each track
         save_vid=False,  # save confidences in --save-txt labels
         nosave=False,  # do not save images/videos
-        classes=None,  # filter by class: --class 0, or --class 0 2 3
+        classes=0,  # filter by class: --class 0, or --class 0 2 3
         agnostic_nms=False,  # class-agnostic NMS
         augment=False,  # augmented inference
         visualize=False,  # visualize features
