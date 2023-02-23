@@ -199,6 +199,7 @@ def run(
                 if prev_frames[i] is not None and curr_frames[i] is not None:  # camera motion compensation
                     tracker_list[i].tracker.camera_update(prev_frames[i], curr_frames[i])
 
+            det = det[det[:, 5] == 0] # only use person class
             if det is not None and len(det):
                 if is_seg:
                     shape = im0.shape
