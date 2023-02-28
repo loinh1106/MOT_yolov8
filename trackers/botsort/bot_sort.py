@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 from collections import deque
 
-from trackers.botsort import  matching
+from trackers.botsort import matching
 from trackers.botsort.gmc import GMC
 from trackers.botsort.basetrack import BaseTrack, TrackState
 from trackers.botsort.kalman_filter import KalmanFilter
 
 # from fast_reid.fast_reid_interfece import FastReIDInterface
 
-from reid_multibackend import ReIDDetectMultiBackend
-from yolov8.ultralytics.yolo.utils.ops import xyxy2xywh, xywh2xyxy
+from trackers.strongsort.reid_multibackend import ReIDDetectMultiBackend
+from ultralytics.yolo.utils.ops import xyxy2xywh, xywh2xyxy
 
 
 class STrack(BaseTrack):
