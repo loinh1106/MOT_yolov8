@@ -1,10 +1,10 @@
 import numpy as np
 import torch
 
-from strongsort.reid_multibackend import ReIDDetectMultiBackend
-from strongsort.sort.detection import Detection
-from strongsort.sort.nn_matching import NearestNeighborDistanceMetric
-from strongsort.sort.tracker import Tracker
+from reid_multibackend import ReIDDetectMultiBackend
+from sort.detection import Detection
+from sort.nn_matching import NearestNeighborDistanceMetric
+from sort.tracker import Tracker
 
 def xyxy2xywh(x):
     # Convert nx4 boxes from [x1, y1, x2, y2] to [x, y, w, h] where xy1=top-left, xy2=bottom-right

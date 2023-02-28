@@ -10,8 +10,8 @@ import torch.nn as nn
 import torchvision.transforms as T
 from yolov5.utils.general import check_requirements, check_version
 
-from strongsort.deep.models import build_model
-from strongsort.deep.reid_model_factory import (
+from deep.models import build_model
+from deep.reid_model_factory import (
     get_model_name,
     get_model_url,
     load_pretrained_weights,
