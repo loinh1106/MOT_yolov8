@@ -3,7 +3,7 @@ from __future__ import absolute_import
 
 import numpy as np
 
-from strongsort.sort import linear_assignment
+from trackers.strongsort.sort import linear_assignment
 
 
 def iou(bbox, candidates):

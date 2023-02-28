@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-from strongsort.sort.kalman_filter import KalmanFilter
+from trackers.strongsort.sort.kalman_filter import KalmanFilter
 
 
 class TrackState:
