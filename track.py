@@ -38,7 +38,7 @@ from ultralytics.yolo.utils.files import increment_path
 from ultralytics.yolo.utils.torch_utils import select_device
 from ultralytics.yolo.utils.ops import Profile, non_max_suppression, scale_boxes, process_mask, process_mask_native
 from ultralytics.yolo.utils.plotting import Annotator, colors, save_one_box
-from strongsort.strong_sort import StrongSORT
+from trackers.get_trackers import create_tracker
 
 
 
@@ -133,7 +133,7 @@ def run(
     # Create as many strong sort instances as there are video sources
     tracker_list = []
     for i in range(bs):
-        tracker = StrongSORT(model_weights=reid_weights, device = device, fp16=False)
+        tracker = create_tracker(tracking_method, tracking_config, reid_weights, device, half)
         tracker_list.append(tracker, )
         if hasattr(tracker_list[i], 'model'):
             if hasattr(tracker_list[i].model, 'warmup'):
