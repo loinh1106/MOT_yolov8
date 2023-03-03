@@ -351,7 +351,7 @@ def parse_opt():
     parser.add_argument('--retina-masks', action='store_true', help='whether to plot masks in native resolution')
     opt = parser.parse_args()
     opt.imgsz *= 2 if len(opt.imgsz) == 1 else 1  # expand
-    opt.tracking_config = ROOT / 'trackers' / opt.tracking_method / 'config' / (opt.tracking_method + '.yaml')
+    opt.tracking_config = ROOT / 'trackers' / opt.tracking_method / 'configs' / (opt.tracking_method + '.yaml')
     print_args(vars(opt))
     return opt
 
