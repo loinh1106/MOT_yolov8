@@ -14,7 +14,6 @@ def create_tracker(tracker_type, tracker_config, reid_weights, device, half):
             max_dist=cfg.strongsort.max_dist,
             max_iou_dist=cfg.strongsort.max_iou_dist,
             max_age=cfg.strongsort.max_age,
-            max_unmatched_preds=cfg.strongsort.max_unmatched_preds,
             n_init=cfg.strongsort.n_init,
             nn_budget=cfg.strongsort.nn_budget,
             mc_lambda=cfg.strongsort.mc_lambda,
