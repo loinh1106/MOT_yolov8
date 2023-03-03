@@ -1,4 +1,4 @@
-strong_sort:
+strongsort:
   ecc: True              # activate camera motion compensation
   mc_lambda: 0.995       # matching with both appearance (1 - MC_LAMBDA) and motion cost
   ema_alpha: 0.9         # updates  appearance  state in  an exponential moving average manner
