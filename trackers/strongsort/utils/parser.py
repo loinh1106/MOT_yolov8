@@ -36,7 +36,7 @@ def get_config(config_file=None):
 
 if __name__ == "__main__":
     cfg = YamlParser(config_file="../config/yolov3.yaml")
-    cfg.merge_from_file("../config/strong_sort.yaml")
+    cfg.merge_from_file("../config/strongsort.yaml")
 
     import ipdb
 
