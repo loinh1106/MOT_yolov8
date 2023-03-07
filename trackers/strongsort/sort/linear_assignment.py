@@ -41,7 +41,7 @@ def min_cost_matching(distance_metric, max_distance, tracks, detections, track_i
         * A list of unmatched detection indices.
     """
     if track_indices is None:
-        track_indices = np.arange(len(tracks))
+        track_indices = np.arange(len(tracks))  
     if detection_indices is None:
         detection_indices = np.arange(len(detections))
 
