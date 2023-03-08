@@ -8,7 +8,7 @@ pip install -r requirements.txt
 
 ### Run code
 ```
-python track.py --yolo-weights yolov8n.pt --tracking-method strongsort \
+python track.py --yolo-weights yolov8x.pt --tracking-method strongsort \
 --source video_path.mp4 \
 --reid-weights osnet_x0_25_market1501.pt \
 --save-txt \
